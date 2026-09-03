@@ -60,7 +60,7 @@
 <main id="adminView" class="admin-page" hidden>
   <div class="admin-top">
     <div><p class="section-kicker">PORTFOLIO MANAGER</p><h1>작업물 관리</h1><p class="admin-note">카드용 썸네일은 이미지로 등록하고, 팝업에서는 이미지 또는 YouTube 영상을 선택해 보여줄 수 있습니다.</p></div>
-    <div class="admin-actions"><button class="btn btn-ghost" id="resetBtn">초기 데이터 복구</button><button class="btn btn-primary" id="logoutBtn">로그아웃</button></div>
+    <div class="admin-actions"><button class="btn btn-ghost" id="resetBtn">초기 데이터 복구</button><button class="btn btn-ghost" id="exportBtn">작업물 백업</button><button class="btn btn-ghost" id="importBtn">작업물 불러오기</button><input id="importFile" type="file" accept="application/json,.json" hidden><button class="btn btn-primary" id="logoutBtn">로그아웃</button></div>
   </div>
 
   <form id="projectForm" class="project-form">
@@ -114,6 +114,49 @@ projects = projects.map(p => ({
 }));
 const $ = id => document.getElementById(id);
 const save = () => localStorage.setItem(KEY, JSON.stringify(projects));
+
+// 브라우저/주소가 바뀌어도 작업물을 옮길 수 있도록 JSON 백업/복원 기능을 제공합니다.
+$("exportBtn").addEventListener("click",()=>{
+  const blob = new Blob([JSON.stringify(projects, null, 2)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "yunju-portfolio-projects-backup.json";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+  alert("작업물 백업 파일이 저장되었습니다.");
+});
+
+$("importBtn").addEventListener("click",()=>$("importFile").click());
+$("importFile").addEventListener("change",e=>{
+  const file=e.target.files?.[0];
+  if(!file)return;
+  const reader=new FileReader();
+  reader.onload=()=>{
+    try{
+      const data=JSON.parse(reader.result);
+      if(!Array.isArray(data)) throw new Error("invalid");
+      projects=data.map(p=>({
+        ...p,
+        thumbnail:p.thumbnail || p.image || "",
+        detailImage:p.detailImage || p.image || p.thumbnail || "",
+        detailType:p.detailType || (p.youtubeUrl ? "video" : "image"),
+        youtubeUrl:p.youtubeUrl || "",
+        videoRatio:p.videoRatio || "16:9"
+      }));
+      save();
+      renderList();
+      resetForm();
+      alert(`작업물 ${projects.length}개를 불러왔습니다.`);
+    }catch(err){
+      alert("백업 파일을 읽을 수 없습니다. 이전에 '작업물 백업'으로 만든 JSON 파일을 선택해주세요.");
+    }
+    e.target.value="";
+  };
+  reader.readAsText(file);
+});
 
 function renderList(){
   $("adminList").innerHTML = projects.length ? projects.map(p => `
