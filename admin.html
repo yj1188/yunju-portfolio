@@ -109,7 +109,17 @@ const DEFAULTS = [
   {id:"p10",category:"offline",date:"2025.09.15",title:"이벤트 포스터",summary:"행사 주목도를 높이는 키비주얼",detail:"짧은 시간 안에 행사 정보를 인지할 수 있도록 날짜와 핵심 카피의 대비를 강화했습니다.",tag:"#OFFLINE",thumbnail:"https://placehold.co/1200x800/2c2c2c/cf1919?text=POSTER",detailImage:"",detailType:"image",youtubeUrl:"",videoRatio:"16:9"}
 ];
 
-let projects = JSON.parse(localStorage.getItem(KEY) || "null") || DEFAULTS;
+let projects = DEFAULTS;
+try {
+  const saved = localStorage.getItem(KEY);
+  if (saved) {
+    const parsed = JSON.parse(saved);
+    if (Array.isArray(parsed)) projects = parsed;
+  }
+} catch (err) {
+  console.warn("저장된 작업물 데이터를 읽지 못해 기본 데이터를 사용합니다.", err);
+  localStorage.removeItem(KEY);
+}
 projects = projects.map(p => ({
   ...p,
   thumbnail: p.thumbnail || p.image || "",
@@ -181,7 +191,6 @@ function setDetailType(type){
   document.querySelectorAll('input[name="detailType"]').forEach(r => r.checked = r.value === type);
   $("detailImageField").hidden = isVideo;
   $("videoFields").hidden = !isVideo;
-  $("detailImage").required = false;
   $("youtubeUrl").required = isVideo;
 }
 function resetForm(){
