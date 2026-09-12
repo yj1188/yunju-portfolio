@@ -169,12 +169,22 @@ img { display: block; width: 100%; object-fit: cover; }
   background: var(--white);
   display: block;
 }
-.modal-media img {
+.modal-images {
+  width: 100%;
+}
+.modal-images img {
   width: 100%;
   height: auto;
   max-height: none;
   object-fit: contain;
   display: block;
+}
+.detail-image-list {
+  display: grid;
+  gap: 8px;
+}
+.detail-image-url {
+  width: 100%;
 }
 .modal-media > [hidden] { display: none !important; }
 .modal-media iframe {

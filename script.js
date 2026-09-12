@@ -369,6 +369,7 @@ let projects = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null") || DEFAUL
 projects = projects.map(p => ({
   ...p,
   thumbnail: p.thumbnail || p.image || "",
+  detailImages: Array.isArray(p.detailImages) ? p.detailImages.filter(Boolean).slice(0,5) : (p.detailImage || p.image || p.thumbnail ? [p.detailImage || p.image || p.thumbnail] : []),
   detailImage: p.detailImage || p.image || p.thumbnail || "",
   detailType: p.detailType || (p.youtubeUrl ? "video" : "image"),
   youtubeUrl: p.youtubeUrl || "",
@@ -417,10 +418,10 @@ function openModal(id) {
   const p = projects.find(x => x.id === id);
   if (!p) return;
   const modalMedia = document.getElementById("modalMedia");
-  const modalImage = document.getElementById("modalImage");
+  const modalImages = document.getElementById("modalImages");
   const modalVideo = document.getElementById("modalVideo");
   modalMedia.classList.remove("ratio-16-9", "ratio-9-16", "image-mode", "video-mode");
-  modalImage.hidden = true;
+  modalImages.innerHTML = "";
   modalVideo.hidden = true;
   modalVideo.src = "";
 
@@ -433,15 +434,11 @@ function openModal(id) {
       modalVideo.hidden = false;
     } else {
       modalMedia.classList.add("image-mode");
-      modalImage.src = p.detailImage || p.thumbnail;
-      modalImage.alt = p.title;
-      modalImage.hidden = false;
+      renderDetailImages(p);
     }
   } else {
     modalMedia.classList.add("image-mode");
-    modalImage.src = p.detailImage || p.thumbnail;
-    modalImage.alt = p.title;
-    modalImage.hidden = false;
+    renderDetailImages(p);
   }
   document.getElementById("modalCategory").textContent = p.tag;
   document.getElementById("modalTitle").textContent = p.title;
@@ -452,6 +449,19 @@ function openModal(id) {
   document.getElementById("projectModal").classList.add("is-open");
   document.getElementById("projectModal").setAttribute("aria-hidden","false");
   document.body.style.overflow = "hidden";
+}
+
+function renderDetailImages(p) {
+  const modalImages = document.getElementById("modalImages");
+  const images = Array.isArray(p.detailImages) ? p.detailImages.filter(Boolean).slice(0,5) : [];
+  const fallback = p.detailImage || p.thumbnail;
+  (images.length ? images : [fallback]).filter(Boolean).forEach((src, i) => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = `${p.title} 상세 이미지 ${i + 1}`;
+    if (i > 0) img.loading = "lazy";
+    modalImages.appendChild(img);
+  });
 }
 function closeModal() {
   document.getElementById("modalVideo").src = "";

@@ -73,7 +73,13 @@
       <div class="field full"><label>작업명</label><input id="title" placeholder="프로젝트 제목" required /></div>
       <div class="field full"><label>카드 썸네일 이미지 URL</label><input id="thumbnail" type="url" placeholder="https://..." required /><small>목록 카드에 표시할 이미지입니다. 카드 비율에 맞게 따로 제작한 이미지를 넣어주세요.</small></div>
       <div class="field full"><label>상세 타입</label><div class="media-type-options"><label><input type="radio" name="detailType" value="image" checked> 이미지</label><label><input type="radio" name="detailType" value="video"> YouTube 영상</label></div></div>
-      <div class="field full" id="detailImageField"><label>상세 이미지 URL</label><input id="detailImage" type="url" placeholder="https://..." /><small>카드를 클릭했을 때 팝업에 표시할 상세 이미지입니다. 세로로 긴 이미지도 전체 비율 그대로 볼 수 있습니다.</small></div>
+      <div class="field full" id="detailImageField"><label>상세 이미지 URL (최대 5개)</label><div class="detail-image-list">
+        <input class="detail-image-url" id="detailImage1" type="url" placeholder="상세 이미지 URL 1 · https://..." />
+        <input class="detail-image-url" id="detailImage2" type="url" placeholder="상세 이미지 URL 2 · https://..." />
+        <input class="detail-image-url" id="detailImage3" type="url" placeholder="상세 이미지 URL 3 · https://..." />
+        <input class="detail-image-url" id="detailImage4" type="url" placeholder="상세 이미지 URL 4 · https://..." />
+        <input class="detail-image-url" id="detailImage5" type="url" placeholder="상세 이미지 URL 5 · https://..." />
+      </div><small>카드를 클릭했을 때 입력한 순서대로 최대 5장의 상세 이미지가 세로로 이어져 표시됩니다. 기존 1장짜리 작업물도 그대로 사용할 수 있습니다.</small></div>
       <div class="video-fields full" id="videoFields" hidden>
         <div class="field"><label>YouTube 영상 URL</label><input id="youtubeUrl" type="url" placeholder="https://www.youtube.com/watch?v=..." /><small>일반 YouTube 링크를 그대로 붙여 넣으면 됩니다.</small></div>
         <div class="field"><label>영상 비율</label><select id="videoRatio"><option value="16:9">16:9 가로 영상</option><option value="9:16">9:16 세로 영상</option></select><small>팝업 안에서 원본 비율을 유지하면서 보기 좋게 표시됩니다.</small></div>
@@ -107,6 +113,7 @@ let projects = JSON.parse(localStorage.getItem(KEY) || "null") || DEFAULTS;
 projects = projects.map(p => ({
   ...p,
   thumbnail: p.thumbnail || p.image || "",
+  detailImages: Array.isArray(p.detailImages) ? p.detailImages.filter(Boolean).slice(0,5) : (p.detailImage || p.image || p.thumbnail ? [p.detailImage || p.image || p.thumbnail] : []),
   detailImage: p.detailImage || p.image || p.thumbnail || "",
   detailType: p.detailType || (p.youtubeUrl ? "video" : "image"),
   youtubeUrl: p.youtubeUrl || "",
@@ -141,6 +148,7 @@ $("importFile").addEventListener("change",e=>{
       projects=data.map(p=>({
         ...p,
         thumbnail:p.thumbnail || p.image || "",
+        detailImages:Array.isArray(p.detailImages) ? p.detailImages.filter(Boolean).slice(0,5) : (p.detailImage || p.image || p.thumbnail ? [p.detailImage || p.image || p.thumbnail] : []),
         detailImage:p.detailImage || p.image || p.thumbnail || "",
         detailType:p.detailType || (p.youtubeUrl ? "video" : "image"),
         youtubeUrl:p.youtubeUrl || "",
@@ -182,7 +190,10 @@ function resetForm(){
 function editProject(id){
   const p=projects.find(x=>x.id===id); if(!p)return;
   $("editId").value=p.id; $("category").value=p.category; $("date").value=p.date; $("title").value=p.title;
-  $("thumbnail").value=p.thumbnail || p.image || ""; $("detailImage").value=p.detailImage || p.image || p.thumbnail || ""; $("youtubeUrl").value=p.youtubeUrl || ""; $("videoRatio").value=p.videoRatio || "16:9"; $("summary").value=p.summary; $("detail").value=p.detail; $("tag").value=p.tag; setDetailType(p.detailType || "image");
+  $("thumbnail").value=p.thumbnail || p.image || "";
+  const detailImages = Array.isArray(p.detailImages) ? p.detailImages : (p.detailImage || p.image || p.thumbnail ? [p.detailImage || p.image || p.thumbnail] : []);
+  document.querySelectorAll(".detail-image-url").forEach((input,i)=> input.value = detailImages[i] || "");
+  $("youtubeUrl").value=p.youtubeUrl || ""; $("videoRatio").value=p.videoRatio || "16:9"; $("summary").value=p.summary; $("detail").value=p.detail; $("tag").value=p.tag; setDetailType(p.detailType || "image");
   $("formTitle").textContent="작업물 수정"; window.scrollTo({top:0,behavior:"smooth"});
 }
 function deleteProject(id){
@@ -209,7 +220,8 @@ $("projectForm").addEventListener("submit",e=>{
   const detailType=getDetailType();
   const youtubeUrl=$("youtubeUrl").value.trim();
   if(detailType === "video" && !youtubeUrl){ alert("YouTube 영상 URL을 입력해주세요."); return; }
-  const data={category:$("category").value,date:$("date").value,title:$("title").value,thumbnail:$("thumbnail").value,detailType,detailImage:$("detailImage").value || $("thumbnail").value,youtubeUrl,videoRatio:$("videoRatio").value,summary:$("summary").value,detail:$("detail").value,tag:$("tag").value||("#"+$("category").value.toUpperCase())};
+  const detailImages = [...document.querySelectorAll(".detail-image-url")].map(input => input.value.trim()).filter(Boolean).slice(0,5);
+  const data={category:$("category").value,date:$("date").value,title:$("title").value,thumbnail:$("thumbnail").value,detailType,detailImages,detailImage:detailImages[0] || $("thumbnail").value,youtubeUrl,videoRatio:$("videoRatio").value,summary:$("summary").value,detail:$("detail").value,tag:$("tag").value||("#"+$("category").value.toUpperCase())};
   const id=$("editId").value;
   if(id){projects=projects.map(p=>p.id===id?{...p,...data}:p)} else projects.push({id:crypto.randomUUID(),...data});
   save(); renderList(); resetForm(); alert("저장되었습니다.");
