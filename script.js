@@ -12,7 +12,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FvBO8K%2FdJMcabZTUPU%2FAAAAAAAAAAAAAAAAAAAAADIoR5Igra8UMAXI__NuF84nShI-4PprO7VqN3U_JZZA%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DORY2v5J18jRxxPmb2oZhEac9u%252Bw%253D",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FvBO8K%2FdJMcabZTUPU%2FAAAAAAAAAAAAAAAAAAAAADIoR5Igra8UMAXI__NuF84nShI-4PprO7VqN3U_JZZA%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DORY2v5J18jRxxPmb2oZhEac9u%252Bw%253D"
+    ]
   },
   {
     "id": "p2",
@@ -27,7 +30,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDP5Sw%2FdJMcabZTUP0%2FAAAAAAAAAAAAAAAAAAAAANDTynHEOwYsB0JFJkrxchJMqplodhJQWIns46bSjO19%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DYQUAl1sriLjknxKTlVQzktcl1Rw%253D",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FDP5Sw%2FdJMcabZTUP0%2FAAAAAAAAAAAAAAAAAAAAANDTynHEOwYsB0JFJkrxchJMqplodhJQWIns46bSjO19%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DYQUAl1sriLjknxKTlVQzktcl1Rw%253D"
+    ]
   },
   {
     "id": "p3",
@@ -42,7 +48,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbrolU5%2FdJMcah6TciX%2FAAAAAAAAAAAAAAAAAAAAAOADaJHxzIKRkoBoUxoNARxbWo24C5L94tYBe4WAPQpx%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DrmduGrMAnO1LIUSvkYTPsHBQ6L4%253D",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbrolU5%2FdJMcah6TciX%2FAAAAAAAAAAAAAAAAAAAAAOADaJHxzIKRkoBoUxoNARxbWo24C5L94tYBe4WAPQpx%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DrmduGrMAnO1LIUSvkYTPsHBQ6L4%253D"
+    ]
   },
   {
     "id": "p4",
@@ -57,7 +66,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://placehold.co/1200x800/dde9ed/cf1919?text=CONTENTS+01",
     "detailType": "video",
     "youtubeUrl": "https://youtube.com/shorts/_EtRE-tqFxI",
-    "videoRatio": "9:16"
+    "videoRatio": "9:16",
+    "detailImages": [
+      "https://placehold.co/1200x800/dde9ed/cf1919?text=CONTENTS+01"
+    ]
   },
   {
     "id": "p5",
@@ -72,7 +84,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://placehold.co/1200x800/e4e4e4/2c2c2c?text=DATA+CONTENT",
     "detailType": "video",
     "youtubeUrl": "https://youtu.be/TmuXAPDyRxg",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://placehold.co/1200x800/e4e4e4/2c2c2c?text=DATA+CONTENT"
+    ]
   },
   {
     "id": "p6",
@@ -87,7 +102,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://placehold.co/1200x800/b9c9d5/ffffff?text=LUCKY+CRUISE",
     "detailType": "video",
     "youtubeUrl": "https://youtube.com/shorts/YCJI2K2PBMY",
-    "videoRatio": "9:16"
+    "videoRatio": "9:16",
+    "detailImages": [
+      "https://placehold.co/1200x800/b9c9d5/ffffff?text=LUCKY+CRUISE"
+    ]
   },
   {
     "id": "p7",
@@ -102,7 +120,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fq05ru%2FdJMcajwQgwI%2FAAAAAAAAAAAAAAAAAAAAAPS7C3FbWglArZO3LUhtjsuUMB6HOVfKzXZz2Dw9nHlg%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dwug6vzlVJJ6Ws1GFjbol6vuBMLM%253D",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fq05ru%2FdJMcajwQgwI%2FAAAAAAAAAAAAAAAAAAAAAPS7C3FbWglArZO3LUhtjsuUMB6HOVfKzXZz2Dw9nHlg%2Fimg.png%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3Dwug6vzlVJJ6Ws1GFjbol6vuBMLM%253D"
+    ]
   },
   {
     "id": "p8",
@@ -117,7 +138,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FQTuY0%2FdJMcadDacMe%2FAAAAAAAAAAAAAAAAAAAAAM1p1YvdVkMgcWFxMtGKM1bEdEuoS377paRUxrirk9vH%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DSmZOz30aRqEH3kOeGgfDBkxznCo%253D",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FQTuY0%2FdJMcadDacMe%2FAAAAAAAAAAAAAAAAAAAAAM1p1YvdVkMgcWFxMtGKM1bEdEuoS377paRUxrirk9vH%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DSmZOz30aRqEH3kOeGgfDBkxznCo%253D"
+    ]
   },
   {
     "id": "p9",
@@ -132,7 +156,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FwnmeO%2FdJMcagmueEP%2FAAAAAAAAAAAAAAAAAAAAAKP_h7HRKOv1L4BEdvLL7w6XuRhnLySTOedFNZfaynp1%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DnRnUNKDO4CJ65S9GRvGSBsv%252BK2A%253D",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FwnmeO%2FdJMcagmueEP%2FAAAAAAAAAAAAAAAAAAAAAKP_h7HRKOv1L4BEdvLL7w6XuRhnLySTOedFNZfaynp1%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DnRnUNKDO4CJ65S9GRvGSBsv%252BK2A%253D"
+    ]
   },
   {
     "id": "p10",
@@ -147,7 +174,10 @@ const DEFAULT_PROJECTS = [
     "detailImage": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FlhsIP%2FdJMcagz2QJ0%2FAAAAAAAAAAAAAAAAAAAAAC2K2b3HApZlS1RzixwU7EUDcwW6IGeG3CnEDt-ie4QN%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DTfyKhQCRVfYoOtjiUIamboDKPbU%253D",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FlhsIP%2FdJMcagz2QJ0%2FAAAAAAAAAAAAAAAAAAAAAC2K2b3HApZlS1RzixwU7EUDcwW6IGeG3CnEDt-ie4QN%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DTfyKhQCRVfYoOtjiUIamboDKPbU%253D"
+    ]
   },
   {
     "id": "a38637cb-5fbe-406c-a394-353e32cb2a9c",
@@ -161,7 +191,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #MERZY",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FD0XQt%2FdJMcadJ0tR1%2FAAAAAAAAAAAAAAAAAAAAAF8HlG3EV9qNE6Z3yaWbvi5W1-WRz8NsARyF0jzus7IP%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DNm09JJdDPY9yGtJ92LFhi0Zqy%252FU%253D"
+    ]
   },
   {
     "id": "b23d9040-0198-4372-9875-f8aec25371ff",
@@ -175,7 +208,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #LUNA",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcvTpTh%2FdJMcabZTUPV%2FAAAAAAAAAAAAAAAAAAAAADHck-11MISp0G0N1QpmjqTn8JYP-1owzBTBeswHZDOS%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DY%252BKmc2qVVcZCQt11fOKtL7YtzHM%253D"
+    ]
   },
   {
     "id": "c8784440-e9db-4708-9cbe-3ef1f3383566",
@@ -189,7 +225,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #AM:TREE",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FXDHkB%2FdJMcah6Tci1%2FAAAAAAAAAAAAAAAAAAAAADrZQet4LcKLkX7AcxD-LJUH-QxqYE7PqGTAvLDbdwsW%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D8vPTU%252FToxJOsBlJRgCBmU7FKQkI%253D"
+    ]
   },
   {
     "id": "02c2a387-b890-4d05-94f3-d7f728ad1388",
@@ -203,7 +242,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #AGE20'S",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fcqa52k%2FdJMcah6Tci0%2FAAAAAAAAAAAAAAAAAAAAAJR9qnYERUBEvz8tkZP9cHxZxzhbnQZ7ciJqp1YfC4H6%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DVFWl%252FicurBGFy7PjTxNsyz3wjTI%253D"
+    ]
   },
   {
     "id": "c48612fe-fa1e-4b48-8b7e-9ba48083033a",
@@ -217,7 +259,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #LOOACO",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FrXGrS%2FdJMcadJ0tSa%2FAAAAAAAAAAAAAAAAAAAAAE6UyODcEbAretqwDJgxHlozGfLG4Vg8YIw4Ggc2nLs6%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DhpRSx3DTM45Oz5OfDzqN2p%252Bx1T4%253D"
+    ]
   },
   {
     "id": "ec62f85b-baba-46cb-a513-6d77c8c36f52",
@@ -231,7 +276,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #AMPLE:N",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FdvfLzR%2FdJMcah6Tci5%2FAAAAAAAAAAAAAAAAAAAAAP_pgEQzEjO5-6ZUeTwgEQ6xxS0uI4EW4kQs6_bxDuQ9%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DI5kN4160bJ3hY2zvTn%252BL67xnVv8%253D"
+    ]
   },
   {
     "id": "3cbad269-4563-487e-8c5c-bf67a8d9c60a",
@@ -245,7 +293,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #AM:TREE",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FGGvMB%2FdJMcah6Tci4%2FAAAAAAAAAAAAAAAAAAAAAAII_Vrb2kgTFCF1njSyudIUrCtRJTvWp6XPa4j2TmFe%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DrD05xGsAp8lrl5uC94mRa6iDl8I%253D"
+    ]
   },
   {
     "id": "0ee03c8c-fe4f-4c2d-8d20-83820886ced1",
@@ -259,7 +310,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #AGE20'S",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F6bL74%2FdJMcabZTUPW%2FAAAAAAAAAAAAAAAAAAAAALyJfP_FoeG40RuPJ0Q7S7FQV5vu3yorhk24ytd7Vvvm%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DaKYlm%252FT2b3saF9LHu6rugTvF%252BYQ%253D"
+    ]
   },
   {
     "id": "394ddff4-da9f-422c-ba61-4ec0c2689c2c",
@@ -273,7 +327,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #POINT&",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fb7FUMI%2FdJMcabZTUPN%2FAAAAAAAAAAAAAAAAAAAAAPCnxgB6FTcLzDxlAtPDuvq8jlIbQctlM3Z-Na7EZ2M4%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DinpfcHVnw32Fz7Y5je7AYnLa6PM%253D"
+    ]
   },
   {
     "id": "aca6421e-ff5b-4492-b882-83133d1b10e6",
@@ -287,7 +344,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #ME,FACTORY",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FMWgFA%2FdJMcabZTUPS%2FAAAAAAAAAAAAAAAAAAAAAKpRAKwLZwJqFN2hE59zz7FN4L77UPvLuCwMEdQUOzB7%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D%252FOQBDV1C2UQDRo7Cy5IavIMdNu8%253D"
+    ]
   },
   {
     "id": "109870c6-4ab5-4ccd-b710-d8e9f1a9661b",
@@ -301,7 +361,10 @@ const DEFAULT_PROJECTS = [
     "tag": "#PROMOTION #LOOACO",
     "detailType": "image",
     "youtubeUrl": "",
-    "videoRatio": "16:9"
+    "videoRatio": "16:9",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FLwYQR%2FdJMcah6Tci3%2FAAAAAAAAAAAAAAAAAAAAAMklbzGdy5oDBb3S6GX6qfiB7hE2eDAjNdSvzydw4L9M%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D6j66A8W4xGUIkdvBIm3USw8repk%253D"
+    ]
   },
   {
     "id": "faac7d74-d576-459b-a34d-528bb7e023d0",
@@ -315,7 +378,10 @@ const DEFAULT_PROJECTS = [
     "videoRatio": "9:16",
     "summary": "[에이엠트리] 단어리듬챌린지 영상",
     "detail": "제작 당시 SNS에서 유행하던 ‘단어 리듬 챌린지’에서 아이디어를 얻어, 프로모션 제품인 팩을 재미있게 홍보할 수 있는 콘텐츠를 기획했습니다.\n\n‘펜, 백, 뱀, 팩’처럼 발음과 이미지가 연결되는 단어를 활용하고, 각 단어에 해당하는 그림을 함께 배치해 시청자가 리듬에 맞춰 직접 따라 할 수 있는 형태로 제작했습니다.\n\n마지막에는 ‘마·스·크·팩·오·백·원·에’라는 문구를 리듬에 맞춰 보여주어 프로모션 정보를 자연스럽게 노출했습니다.\n\n제품 광고라는 목적을 전면에 내세우기보다 당시 유행하던 콘텐츠 형식을 활용해 재미와 참여 요소를 먼저 제공함으로써 광고에 대한 부담을 낮추고 제품을 자연스럽게 인지하도록 기획했습니다.",
-    "tag": "#CONTENTS #AM:TREE"
+    "tag": "#CONTENTS #AM:TREE",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2Fl3iuT%2FdJMcabliPpO%2FAAAAAAAAAAAAAAAAAAAAAMWG_h2ihkl_hBFzyTJZWHBibv3LHIC2dujDKhSxUhnn%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3D3U06E%252FTacVYB%252F%252B3Bj09qL%252BaHV1U%253D"
+    ]
   },
   {
     "id": "bfcd2d27-88f8-4bc6-9c8c-55aa78afa690",
@@ -329,7 +395,10 @@ const DEFAULT_PROJECTS = [
     "videoRatio": "16:9",
     "summary": "[에이엠트리] AI 활용 영상",
     "detail": "제품의 이미지를 단순하게 보여주는 방식에서 벗어나, 제품을 하나의 재미있는 세계관 속에 배치하는 AI 콘텐츠를 기획했습니다.\n제품과 함께 다양한 콘셉트의 AI 이미지를 제작한 후, 이를 기반으로 AI 영상 제작 기술을 활용해 짧은 영상 콘텐츠로 확장했습니다.\n\n눈사람이 제품 옆에서 손을 흔들거나, 미니어처 사람들이 제품을 촬영하고, 토너에서 흘러나온 물을 활용해 사람들이 보드를 타는 등 현실에서는 구현하기 어려운 장면을 재미있게 연출했습니다.\n\n제품의 기능을 직접적으로 설명하기보다 AI 특유의 상상력과 재미를 활용해 소비자의 시선을 끌고, 브랜드와 제품을 보다 친근하게 인식할 수 있도록 제작했습니다.",
-    "tag": "#CONTENTS #AM:TREE"
+    "tag": "#CONTENTS #AM:TREE",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbKOynA%2FdJMcagthEEU%2FAAAAAAAAAAAAAAAAAAAAAATcX59xNdse9wBHjoXq3_5qIuuoQW2uqIPjR7d7NtqD%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DUwUOaLDSRP5I00RNv18wt5eyOBo%253D"
+    ]
   },
   {
     "id": "18e46b20-ba4a-4bdb-90a5-c8195b3a86a8",
@@ -343,7 +412,10 @@ const DEFAULT_PROJECTS = [
     "videoRatio": "16:9",
     "summary": "[루아코] 모이스처 밸런스 바디라인 상세페이지 디자인",
     "detail": "온가족이 안심하고 사용할 수 있는 제품이라는 브랜드 메시지를 중심으로 설계했습니다.\n \n테스트 결과나 객관적인 정보를 근거로 제시하고,\n제품의 특징과 사용법을 단계적으로 배치해 소비자가 정보를 직관적으로 이해할 수 있게 구성했습니다.\n \n깨끗하고 편안한 비주얼과 그린 컬러를 더해,\n루아코의 순하고 친근한 브랜드 이미지를 시각적으로도 강화했습니다.\n\n바디워시 상세페이지 : https://smartstore.naver.com/wellmake1/products/10893726238\n바디로션 상세페이지 : https://smartstore.naver.com/wellmake1/products/10893731408\n울트라 바디로션 상세페이지 : https://smartstore.naver.com/wellmake1/products/10893737153\n",
-    "tag": "#WEB #LOOACO #DETAILPAGE"
+    "tag": "#WEB #LOOACO #DETAILPAGE",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FcBpEtp%2FdJMcad4lmpT%2FAAAAAAAAAAAAAAAAAAAAAOYE7Nxsc91fKzdk_suu4yfCPFvzTZc4VKbOTr3zgVRP%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DbCf6TPWhtB%252BY2fcYePlAT3sW1ic%253D"
+    ]
   },
   {
     "id": "b9d04fe7-ff0d-4c08-9c02-35584a980a10",
@@ -357,7 +429,31 @@ const DEFAULT_PROJECTS = [
     "videoRatio": "16:9",
     "summary": "[에이엠트리] 코스모 뷰티 서울 2026 전시회 부스 디자인",
     "detail": "오프라인 전시의 특성 상 스쳐 지나가는 동선 안에서 짧은 시간에 주목시켜야 하는 만큼, 텍스트보다\n이미지의 임팩트가 우선이라 생각해 모델컷을 대형 그래픽으로 활용했습니다.\n \n차분한 뉴트럴 톤으로 브랜드 아이덴티티를 유지하면서,\n제품명과 간단한 설명을 함께 배치해 직관적으로 정보를 전달하였습니다.\n \n해외 바이어와 인플루언서의 접근성을 고려해 테이블에 qr코드를 배치해 현장에서 바로 웹사이트와 제품 정보를 확인할 수 있도록 구성하였습니다.",
-    "tag": "#OFFLINE #AM:TREE #BOOTH"
+    "tag": "#OFFLINE #AM:TREE #BOOTH",
+    "detailImages": [
+      "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbNGE4G%2FdJMcagUoeRM%2FAAAAAAAAAAAAAAAAAAAAACReyg37Z3Vc8WghOjxkuyKYxUOQyGg1YrbgP-gccKao%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DKLdjMh0bWRez2dRkD0G4dMqjBwU%253D"
+    ]
+  },
+  {
+    "id": "a33caa7f-48bb-4122-88c8-d5281900bad0",
+    "category": "web",
+    "date": "2026.09.01",
+    "title": "MODEL RETOUCH",
+    "thumbnail": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbFjUyo%2FdJMcacq7U8Q%2FAAAAAAAAAAAAAAAAAAAAAO-XY-jFmXPOyNSU5-SO4Qp88nQFlZWgp4h14CuiI24W%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1790780399%26allow_ip%3D%26allow_referer%3D%26signature%3DfAsaVLyKWuDswdsJm0slKcV3MsA%253D",
+    "detailType": "image",
+    "detailImage": "https://blog.kakaocdn.net/dna/IkSuE/dJMcahlFLQS/AAAAAAAAAAAAAAAAAAAAADiKVE4Ch1oGL2fhOmF26jBVkrYo7JZFhKgej78sk2By/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=1cJoTqrgwYi1q7hyxunRI87cvpc%3D",
+    "youtubeUrl": "",
+    "videoRatio": "16:9",
+    "summary": "[에이엠트리] 스킨케어 및 바디케어 모델 보정",
+    "detail": "화장품 브랜드 특성에 맞춰 깨끗하고 건강한 피부톤을 살리는데 집중해 보정했습니다.\n과한 느낌보다는 모델이 가진 본연의 매력을 자연스럽게 살려, 제품에 대한 신뢰감까지 전달되도록 했습니다.",
+    "tag": "#WEB #AM:TREE #MODEL #RETOUCH",
+    "detailImages": [
+      "https://blog.kakaocdn.net/dna/IkSuE/dJMcahlFLQS/AAAAAAAAAAAAAAAAAAAAADiKVE4Ch1oGL2fhOmF26jBVkrYo7JZFhKgej78sk2By/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=1cJoTqrgwYi1q7hyxunRI87cvpc%3D",
+      "https://blog.kakaocdn.net/dna/yRXUg/dJMcafnQpuA/AAAAAAAAAAAAAAAAAAAAACpTiP64tlmjNXNEVAkQgdPhtjqzwsmTaK1UH--6NFlz/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=FpuFsTfKQS6OO4IZuCfvDa5PPWA%3D",
+      "https://blog.kakaocdn.net/dna/bP1RHg/dJMcaf8ZtSC/AAAAAAAAAAAAAAAAAAAAAFxqBZSHWQwxR0MJXHFuAzoRF2WbOp5i7B-c9X-5_y1J/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=uVfr8BsAMZz25jlQcREMH6OTZmM%3D",
+      "https://blog.kakaocdn.net/dna/bk09Ay/dJMcaf8ZtSu/AAAAAAAAAAAAAAAAAAAAAFCwovjRrrwCAxadyaIJp75XTr1EVs62SeGgHGRNd8W6/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=5kd1CursKyN6WYkGWqHoH9z6gX0%3D",
+      "https://blog.kakaocdn.net/dna/bqeyKP/dJMcahlFLQR/AAAAAAAAAAAAAAAAAAAAALb5WEUS84L2U_jcvDs8Drmxg-0fPGCEDh_UpgR5kWH6/img.gif?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1790780399&allow_ip=&allow_referer=&signature=rFcEu5sYzhXF3%2BPWZGsnyQeAxG8%3D"
+    ]
   }
 ];
 
